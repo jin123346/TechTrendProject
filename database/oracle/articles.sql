@@ -1,0 +1,21 @@
+insert into articles(
+    source,
+    source_name,
+    title,
+    description,
+    original_url,
+    published_at,
+    collected_at,
+    search_keyword
+)
+values(
+    seq_articles.NEXTVAL,
+    :source,
+    :source_name,
+    :title,
+    :description,
+    :original_url,
+    :published_at,
+    :collected_at,
+    :search_keyword
+);
